@@ -1,0 +1,13 @@
+.footer {
+  transform: translateY(2.5rem);
+
+  .footer__text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    transform: translateY(-5rem);
+    a {
+      text-decoration: underline;
+      color: $color-button-blue-hover;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  scroll-behavior: smooth;
+  //hide the scrollbar
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .wrapper {
+    background-color: $color-body-light;
+    .container {
+      margin: 0 auto;
+      min-height: 100vh;
+      max-width: 98.6rem;
+      background-color: $color-background-light;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TITLE -->
+    <title>Test Monq Digital Lab</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- START CONTAINER -->
+        <!-- ============MAIN============== -->
+        <main class="main">
+          <div class="main__text">
+            <h1 class="text__title">Preferences</h1>
+            <h2 class="text__subtitle">
+              On this page you can configure the main system parameters
+              available for customization
+            </h2>
+          </div>
+          <!-- -------------- -->
+          <form class="main__form">
+            <label for="title">Company Title</label>
+            <input type="text" id="title" />
+            <!-- -----INP------ -->
+            <select name="days" id="days">
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Friday</option>
+              <option value="6">Saturday</option>
+              <option value="7">Sunday</option>
+            </select>
+            <!-- -----INP------ -->
+            <select name="position" id="position">
+              <option value="1">Fixed</option>
+              <option value="2">Absolute</option>
+              <option value="3">Static</option>
+              <option value="4">Relative</option>
+            </select>
+            <!-- -----INP------ -->
+            <select name="projects" id="projects">
+              <option value="1">Starred Projects</option>
+              <option value="3">Disabled Projects</option>
+            </select>
+            <!-- -----INP------ -->
+            <label for="size">Indent Size</label>
+            <input type="text" id="size" placeholder="Default" />
+            <!-- -----INP------ -->
+            <label for="code">
+              Personal Code
+              <input type="text" id="code" />-<input
+                type="text"
+                id="code"
+              />-<input type="text" id="code" />
+            </label>
+            <!-- -----INP------ -->
+            <label for="theme">Theme</label>
+            <input type="radio" name="light" id="theme" />
+            <input type="radio" name="dark" id="theme" />
+            <!-- -----INP------ -->
+            <div class="button__input">
+              <button type="submit">Apply and Save</button>
+              <button type="reset">Cancel</button>
+            </div>
+          </form>
+        </main>
+
+        <!-- ============FOOTER============== -->
+        <footer class="footer">
+          <img src="image/image44.svg" alt="image" />
+          <!-- -------------- -->
+          <p class="footer__text">
+            2020-2022
+            <a href="https://monq.ru/" target="_blank" rel="Terms of Service"
+              >Terms of Service</a
+            >
+            and
+            <a href="https://monq.ru/" target="_blank" rel="Conditions"
+              >Conditions</a
+            >
+          </p>
+        </footer>
+
+        <!-- END CONTAINER -->
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
