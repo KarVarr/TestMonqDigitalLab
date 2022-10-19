@@ -1,0 +1,42 @@
+.button__input {
+  display: flex;
+  gap: 1.6rem;
+  .button {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 4px 8px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  .button--submit {
+    color: $color-background-light;
+    background-color: $color-button-blue;
+    &:hover {
+      color: darken($color: $color-background-light, $amount: 5);
+      background-color: $color-button-blue-hover;
+    }
+    &:focus {
+      outline: 1px solid $color-button-blue-dark-hover;
+    }
+    &:active {
+      background-color: darken($color: $color-button-blue-hover, $amount: 5);
+    }
+  }
+  .button--reset {
+    color: $color-button-blue-hover;
+    background-color: $color-background-light;
+    &:hover {
+      color: darken($color: $color-button-blue-hover, $amount: 5);
+      background-color: $color-button-gray;
+    }
+    &:focus {
+      outline: 1px solid $color-button-blue;
+    }
+    &:active {
+      background-color: darken($color: $color-button-gray, $amount: 5);
+    }
+  }
+}

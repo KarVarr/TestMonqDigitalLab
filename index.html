@@ -31,40 +31,75 @@
           </div>
           <!-- -------------- -->
           <form class="main__form">
-            <label for="title">Company Title</label>
-            <input type="text" id="title" />
+            <label for="title"
+              >Company Title
+              <input type="text" id="title" />
+            </label>
+
             <!-- -----INP------ -->
-            <select name="days" id="days">
-              <option value="1">Monday</option>
-              <option value="2">Tuesday</option>
-              <option value="3">Wednesday</option>
-              <option value="4">Thursday</option>
-              <option value="5">Friday</option>
-              <option value="6">Saturday</option>
-              <option value="7">Sunday</option>
-            </select>
+            <label for="days"
+              >First Day
+              <select name="days" id="days">
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="7">Sunday</option>
+              </select>
+            </label>
             <!-- -----INP------ -->
-            <select name="position" id="position">
-              <option value="1">Fixed</option>
-              <option value="2">Absolute</option>
-              <option value="3">Static</option>
-              <option value="4">Relative</option>
-            </select>
+            <label for="position"
+              >Container Width
+              <select name="position" id="position">
+                <option value="1">Fixed</option>
+                <option value="2">Absolute</option>
+                <option value="3">Static</option>
+                <option value="4">Relative</option>
+              </select>
+            </label>
             <!-- -----INP------ -->
-            <select name="projects" id="projects">
-              <option value="1">Starred Projects</option>
-              <option value="3">Disabled Projects</option>
-            </select>
+            <label for="projects"
+              >Homepage
+              <select name="projects" id="projects">
+                <option value="1">Starred Projects</option>
+                <option value="3">Disabled Projects</option>
+              </select>
+            </label>
             <!-- -----INP------ -->
-            <label for="size">Indent Size</label>
-            <input type="text" id="size" placeholder="Default" />
+            <label for="size"
+              >Indent Size
+              <input type="text" id="size" placeholder="Default" />
+            </label>
             <!-- -----INP------ -->
             <label for="code">
               Personal Code
-              <input type="text" id="code" />-<input
-                type="text"
-                id="code"
-              />-<input type="text" id="code" />
+              <div class="form__label--number">
+                <input
+                  type="number"
+                  id="code"
+                  min="0001"
+                  max="9999"
+                  maxlength="4"
+                />
+                -
+                <input
+                  type="number"
+                  id="code"
+                  min="0001"
+                  max="9999"
+                  maxlength="4"
+                />
+                -
+                <input
+                  type="number"
+                  id="code"
+                  min="0001"
+                  max="9999"
+                  maxlength="4"
+                />
+              </div>
             </label>
             <!-- -----INP------ -->
             <label for="theme">Theme</label>
@@ -72,8 +107,10 @@
             <input type="radio" name="dark" id="theme" />
             <!-- -----INP------ -->
             <div class="button__input">
-              <button type="submit">Apply and Save</button>
-              <button type="reset">Cancel</button>
+              <button type="submit" class="button--submit button">
+                Apply and Save
+              </button>
+              <button type="reset" class="button--reset button">Cancel</button>
             </div>
           </form>
         </main>

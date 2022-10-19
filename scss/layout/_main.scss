@@ -1,13 +1,47 @@
 .main {
-    .main__text {
-        .text__title {
-        }
-        .text__subtitle {
-        }
+  .main__form {
+    max-width: 32rem;
+    max-height: 41rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.4rem;
+    input[type='text'] {
+      min-width: 19.6rem;
+      min-height: 3.2rem;
+      padding: 8px;
+      color: $color-text-black;
+      background-color: $color-input-brown;
+      border: 1px solid $color-brown-light;
+      border-radius: 6px;
     }
-    .main__form {
-        .button__input {
-        }
+    input[type='number'] {
+      max-width: 4.9rem !important;
+      min-height: 3.2rem;
+      padding: 8px;
+      color: $color-text-black;
+      background-color: $color-input-brown;
+      border: 1px solid $color-brown-light;
+      border-radius: 6px;
     }
-    
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .form__label--number {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      &::before {
+        content: '12 digits';
+
+        font-size: 1.1rem;
+        color: $color-brown-light;
+        position: absolute;
+        bottom: -1.9rem;
+      }
+    }
+  }
 }
