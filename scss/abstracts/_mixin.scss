@@ -18,3 +18,19 @@
     }
   }
 }
+
+@mixin input {
+  
+  min-height: 3.2rem;
+  padding: 8px;
+  color: $color-text-black;
+  background-color: $color-input-brown;
+  border: 1px solid $color-brown-light;
+  border-radius: 6px;
+  &:hover {
+    background-color: darken($color: $color-button-gray, $amount: 9)
+  }
+  &:focus {
+    outline: 1px solid $color-button-blue;
+  }
+}

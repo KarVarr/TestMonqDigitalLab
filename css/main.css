@@ -174,7 +174,7 @@ menu {
 
 .main .main__form {
   max-width: 32rem;
-  max-height: 41rem;
+  max-height: 52rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -189,6 +189,12 @@ menu {
   border: 1px solid #887C7C;
   border-radius: 6px;
 }
+.main .main__form input[type=text]:hover {
+  background-color: #cac1c1;
+}
+.main .main__form input[type=text]:focus {
+  outline: 1px solid #2a75db;
+}
 .main .main__form input[type=number] {
   max-width: 4.9rem !important;
   min-height: 3.2rem;
@@ -198,7 +204,14 @@ menu {
   border: 1px solid #887C7C;
   border-radius: 6px;
 }
+.main .main__form input[type=number]:hover {
+  background-color: #cac1c1;
+}
+.main .main__form input[type=number]:focus {
+  outline: 1px solid #2a75db;
+}
 .main .main__form label {
+  color: #585050;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -215,6 +228,40 @@ menu {
   color: #887C7C;
   position: absolute;
   bottom: -1.9rem;
+}
+.main .main__form select {
+  min-width: 19.6rem;
+  min-height: 3.2rem;
+  padding: 8px;
+  color: #0B0A0A;
+  background-color: #DFDADA;
+  border: 1px solid #887C7C;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.main .main__form select:hover {
+  background-color: #cac1c1;
+}
+.main .main__form select:focus {
+  outline: 1px solid #2a75db;
+}
+.main .main__form .theme {
+  margin-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 8rem;
+}
+.main .main__form .theme .theme__box {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.main .main__form .theme .theme__box .theme__input {
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
 .footer {

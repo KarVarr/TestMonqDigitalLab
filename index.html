@@ -33,7 +33,7 @@
           <form class="main__form">
             <label for="title"
               >Company Title
-              <input type="text" id="title" />
+              <input type="text" id="title" placeholder="Default" />
             </label>
 
             <!-- -----INP------ -->
@@ -102,9 +102,19 @@
               </div>
             </label>
             <!-- -----INP------ -->
-            <label for="theme">Theme</label>
-            <input type="radio" name="light" id="theme" />
-            <input type="radio" name="dark" id="theme" />
+            <label for="theme" class="theme"
+              >Theme
+              <div class="theme__box">
+                <div class="theme__input theme__input--light">
+                  <input type="radio" name="theme" id="theme" checked />
+                  <p>Light</p>
+                </div>
+                <div class="theme__input theme__input--dark">
+                  <input type="radio" name="theme" id="theme" />
+                  <p>Dark</p>
+                </div>
+              </div>
+            </label>
             <!-- -----INP------ -->
             <div class="button__input">
               <button type="submit" class="button--submit button">
@@ -120,7 +130,7 @@
           <img src="image/image44.svg" alt="image" />
           <!-- -------------- -->
           <p class="footer__text">
-            2020-2022
+            2020-<span id="curYear">js-current-date</span>
             <a href="https://monq.ru/" target="_blank" rel="Terms of Service"
               >Terms of Service</a
             >
