@@ -15,6 +15,7 @@
     <title>Test Monq Digital Lab</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" title="theme" href="css/theme-light.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -70,7 +71,7 @@
             <!-- -----INP------ -->
             <label for="size"
               >Indent Size
-              <input type="text" id="size" placeholder="Default" />
+              <input type="text" placeholder="Default" />
             </label>
             <!-- -----INP------ -->
             <label for="code">
@@ -106,12 +107,18 @@
               >Theme
               <div class="theme__box">
                 <div class="theme__input theme__input--light">
-                  <input type="radio" name="theme" id="theme-1" checked />
-                  <label for="theme-1">Light</label>
+                  <input
+                    type="radio"
+                    name="theme"
+                    id="light"
+                    checked
+                    value="light"
+                  />
+                  <label for="light">Light</label>
                 </div>
                 <div class="theme__input theme__input--dark">
-                  <input type="radio" name="theme" id="theme-2" />
-                  <label for="theme-2">Dark</label>
+                  <input type="radio" name="theme" id="dark" value="dark" />
+                  <label for="dark">Dark</label>
                 </div>
               </div>
             </label>

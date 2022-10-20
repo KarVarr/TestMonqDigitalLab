@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 2.4rem;
-    input[type='text'] {
+    input[type='text'],
+    #size {
       min-width: 19.6rem;
       @include input;
     }
