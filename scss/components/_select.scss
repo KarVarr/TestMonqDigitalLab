@@ -1,0 +1,26 @@
+select {
+  min-width: 19.6rem;
+  @include input;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+}
+.custom-selector {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: url('../image/VectorArrowDown.svg');
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    right: 14px;
+  }
+  &:hover::after {
+    content: url('../image/VectorArrow.svg');
+    transform: rotate(180deg) translateY(-2.7px);
+  }
+}
