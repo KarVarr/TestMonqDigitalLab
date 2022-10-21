@@ -16,8 +16,18 @@ button.addEventListener('click', e => {
       document
         .querySelector('[title="theme"]')
         .setAttribute('href', `css/theme-${color.value}.css`);
+        localStorage.setItem('theme', color.value)
     }
   }
-
-
+  let activeTheme = localStorage.getItem('theme')
+  if (activeTheme === 'light' || activeTheme === null) {
+    document
+        .querySelector('[title="theme"]')
+        .setAttribute('href', `css/theme-light.css`);
+  } else { 
+     document
+        .querySelector('[title="theme"]')
+        .setAttribute('href', `css/theme-dark.css`);
+  }
+  
 });
