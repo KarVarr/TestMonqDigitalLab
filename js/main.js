@@ -19,7 +19,9 @@ button.addEventListener('click', e => {
         localStorage.setItem('theme', color.value)
     }
   }
-  let activeTheme = localStorage.getItem('theme')
+});
+
+ let activeTheme = localStorage.getItem('theme')
   if (activeTheme === 'light' || activeTheme === null) {
     document
         .querySelector('[title="theme"]')
@@ -29,5 +31,3 @@ button.addEventListener('click', e => {
         .querySelector('[title="theme"]')
         .setAttribute('href', `css/theme-dark.css`);
   }
-  
-});
