@@ -26,8 +26,11 @@ button.addEventListener('click', e => {
     document
         .querySelector('[title="theme"]')
         .setAttribute('href', `css/theme-light.css`);
+     document.getElementById('light').checked = true;
   } else { 
      document
         .querySelector('[title="theme"]')
         .setAttribute('href', `css/theme-dark.css`);
+    document.getElementById('dark').checked = true;
+
   }
